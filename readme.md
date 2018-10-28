@@ -26,6 +26,7 @@ docker build .
 docker build -t andy/redis:latest . (tag)
 docker commit -c 'CMD ["redis-server"]'
 docker run -p 5000:8080 <id> (port mapping, outside:inside)
+docker attach <id>
 ```
 
 ## docker-compose
