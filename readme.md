@@ -40,10 +40,31 @@ docker-compose up --build = docker build . + docker run myimage
 docker-compose ps
 ```
 
-## docker workflow
+## docker workflow for React/Frontend App developent
+
+### use docker
 
 ```terminal
 docker build -f Dockerfile.dev .
+<!-- volume -->
+docker run -p 4001:3000 -v /app/node_modules -v $(pwd):/app <id>
+docker run -p 4001:3000 -v /app/node_modules(bookmark) -v $(pwd):/app(map the pwd into /app folder) <id>
+```
+
+### use docker-compose
+
+```yml
+version: "3"
+services:
+  web-app:
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    ports:
+      - "4001:3000"
+    volumes:
+      - /app/node_modules
+      - .:/app
 ```
 
 ## Resources
