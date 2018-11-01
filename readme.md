@@ -68,6 +68,21 @@ services:
       - .:/app
 ```
 
+### Kubernetes
+
+- Object types
+  - Pods
+  - Services - sets up networking in Kubernetes Cluster
+    - ClusterIP
+    - NodePort // not for production
+    - LoadBalancer
+    - Ingress
+- commands
+
+```terminal
+kubectl apply -f client-pod.yaml
+```
+
 ## Resources
 
 [docker-and-kubernetes-the-complete-guide](https://www.udemy.com/docker-and-kubernetes-the-complete-guide)
