@@ -11,13 +11,13 @@ docker run -d <name> (background)
 docker create
 docker start + <id>
 docker start -a <id> (attach, print into the console)
-docker system prune
+docker system prune (dangerously delete all containers and networks)
 docker logs <id>
 docker stop <id>
 docker kill <id>
 
 docker exec -it <id> command (provide input to, in text)
-docker exect -i -t
+docker exec -i -t
   -i: make my input to stdin
   -t: make sure all text in stdout is beautiful
 docker exec -it <id> sh (run the same one)

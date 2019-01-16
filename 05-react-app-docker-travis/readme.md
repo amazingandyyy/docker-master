@@ -1,1 +1,1 @@
-https://github.com/amazingandyyy/react-app-docker-travis
+https://github.com/amazingandyyy/react-docker
