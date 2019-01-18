@@ -86,6 +86,8 @@ kubectl apply -f ./client-pod.yaml
 kubectl get all
 kubectl get pods/services/...
 kubectl describe <service-name> <instance-name>
+kubectl delete -f ./client-pod.yaml
+kubectl set image deployment/client-deployment client=amazingandyyy/react-docker:v2
 ```
 
 ## Resources

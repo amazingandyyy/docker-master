@@ -7,6 +7,6 @@ metadata:
 spec:
   containers:
     - name: client
-      image: stephengrider/multi-worker
+      image: amazingandyyy/react-docker
       ports:
         - containerPort: 3000
