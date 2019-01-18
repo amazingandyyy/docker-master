@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: client-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      componenttt: web-appp
+  template:
+    metadata:
+      labels:
+        componenttt: web-appp
+    spec:
+      containers:
+        - name: client
+          image: amazingandyyy/react-docker
+          ports:
+            - containerPort: 3000

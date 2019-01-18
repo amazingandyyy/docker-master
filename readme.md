@@ -68,19 +68,24 @@ services:
       - .:/app
 ```
 
-### Kubernetes
+### Kubernetes(K8s)
 
 - Object types
-  - Pods - run a container
+  - Pods - run a container(usually not for production)
   - Services - set up networking in Kubernetes Cluster
     - ClusterIP
     - NodePort // not for production
     - LoadBalancer
     - Ingress
+  - Deployment - run multiple containers
 - commands
 
 ```terminal
+minikube ip
 kubectl apply -f ./client-pod.yaml
+kubectl get all
+kubectl get pods/services/...
+kubectl describe <service-name> <instance-name>
 ```
 
 ## Resources
