@@ -71,8 +71,8 @@ services:
 ### Kubernetes
 
 - Object types
-  - Pods
-  - Services - sets up networking in Kubernetes Cluster
+  - Pods - run a container
+  - Services - set up networking in Kubernetes Cluster
     - ClusterIP
     - NodePort // not for production
     - LoadBalancer
@@ -80,12 +80,12 @@ services:
 - commands
 
 ```terminal
-kubectl apply -f client-pod.yaml
+kubectl apply -f ./client-pod.yaml
 ```
 
 ## Resources
-
 [docker-and-kubernetes-the-complete-guide](https://www.udemy.com/docker-and-kubernetes-the-complete-guide)
 
 ## License
+
 [MIT](https://github.com/amazingandyyy/docker-master/blob/master/license)
