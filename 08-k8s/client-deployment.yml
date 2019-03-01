@@ -6,11 +6,11 @@ spec:
   replicas: 1
   selector:
     matchLabels:
-      componenttt: web-appp
+      component: web-app
   template:
     metadata:
       labels:
-        componenttt: web-appp
+        component: web-app
     spec:
       containers:
         - name: client

@@ -3,10 +3,10 @@ kind: Pod
 metadata:
   name: client-pod
   labels:
-    componenttt: web-appp
+    component: web-app
 spec:
   containers:
     - name: client
-      image: amazingandyyy/react-docker
+      image: stephengrider/multi-client
       ports:
         - containerPort: 3000
